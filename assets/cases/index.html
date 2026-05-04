@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口碑製造所｜真人寫真實口碑，被網友看見、被 AI 推薦</title>
+<meta name="description" content="口碑，是製造出來的。在地真人寫手親筆寫，把真實口碑佈在 Mobile01、Dcard、痞客邦，讓網友找得到、讓 AI 引擎也推薦你。">
+<meta property="og:title" content="口碑製造所｜真實口碑，被網友看見、被 AI 推薦">
+<meta property="og:description" content="真人寫手 × 真實案例，被網友討論、被 AI 引用。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="口碑製造所｜真實口碑，被網友看見、被 AI 推薦">
+<meta name="twitter:description" content="真人寫手 × 真實案例，被網友討論、被 AI 引用。">
+
+<!-- Favicon — emoji as SVG (口碑/megaphone) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📣</text></svg>">
+
+<!-- Structured data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "口碑製造所",
+  "alternateName": "WoM Factory",
+  "description": "真人寫真實口碑，被網友看見、被 AI 推薦。在地真人寫手把真實案例寫進 Mobile01、Dcard、痞客邦，每月 100+ FB 社團同步曝光，並透過 GEO 工程讓品牌在 ChatGPT、Perplexity 被主動推薦。",
+  "url": "https://wmf.com.tw/",
+  "sameAs": ["https://lin.ee/N0z1eq9"],
+  "areaServed": "TW",
+  "knowsLanguage": ["zh-Hant"]
+}
+</script>
+
+<!-- Structured data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"你們跟「找 KOL 寫業配」差在哪？","acceptedAnswer":{"@type":"Answer","text":"KOL 是「網紅推薦」，我們是「素人分享」。準買家在做功課時，會搜尋一般使用者的真實心得，那種「我自己用過」的口碑信任度，比 KOL 業配高得多。"}},
+    {"@type":"Question","name":"寫手會親自去用、去吃、去體驗嗎？","acceptedAnswer":{"@type":"Answer","text":"看產業類型。餐廳、店家、體驗類服務，寫手會親自前往；線上服務、B2B 軟體則會深度訪談你的真實客戶。"}},
+    {"@type":"Question","name":"我可以指定要發哪些平台嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。Mobile01、痞客邦、Dcard、小紅書、Threads 五大平台都有寫手帳號。我們會依你的產業跟受眾建議組合，但最終由你決定。"}},
+    {"@type":"Question","name":"每月 100+ FB 社團曝光是怎麼運作的？","acceptedAnswer":{"@type":"Answer","text":"我們會依你的產業跟客群，篩選出 100+ 個目標社團，把口碑文案以真人在地寫手帳號自然發佈。不是廣告、不是洗版，是真實使用心得在客群常駐的地方被看見。"}},
+    {"@type":"Question","name":"怎麼讓 ChatGPT、Perplexity 主動推薦我？","acceptedAnswer":{"@type":"Answer","text":"這就是 GEO 答案佔位工程做的事。我們對 6 大 AI 引擎跑你產業的關鍵提問，找出該被推薦但沒被推薦的缺口，再針對性製作答案內容補上。"}},
+    {"@type":"Question","name":"多久看得到？","acceptedAnswer":{"@type":"Answer","text":"平台曝光 1-2 週、Google 自然搜尋 3-6 個月、AI 引擎開始引用 4-8 週。我們不保證排名，但保證每月給你看得到的進度。"}},
+    {"@type":"Question","name":"怎麼合作？怎麼報價？","acceptedAnswer":{"@type":"Answer","text":"每個品牌的產業、目標、平台組合都不同，我們不公開制式價目，採客製報價。先 30 分鐘免費品牌健檢，了解你的需求與現況後，由業務專員提供量身方案。"}}
+  ]
+}
+</script>
+
+<!-- TODO: GA4 (請提供 measurement ID 後填入)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXX')</script>
+-->
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0F1419',
+        navy: '#1B2D4A',
+        navy2: '#243957',
+        gold: '#C49A6C',
+        gold2: '#D9B98A',
+        ai: '#7C5CFF',
+        ai2: '#9F87FF',
+        cream: '#F8F4ED',
+        cream2: '#EFE8DA'
+      },
+      fontFamily: {
+        serif: ['"Noto Serif TC"', 'serif'],
+        sans: ['"Noto Sans TC"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans TC', sans-serif; color: #1A1A1A; background: #F8F4ED; }
+h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; letter-spacing: 0.02em; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Grid texture for hero */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(196,154,108,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196,154,108,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Service block hover */
+.svc-block {
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.svc-block:hover {
+  transform: translateY(-4px);
+  border-color: #C49A6C;
+  box-shadow: 0 20px 40px -20px rgba(15,20,25,0.25);
+}
+.svc-block.ai:hover { border-color: #7C5CFF; box-shadow: 0 20px 40px -20px rgba(124,92,255,0.35); }
+
+/* AI tag pulse */
+@keyframes pulse-ai { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
+.ai-dot { animation: pulse-ai 2s ease-in-out infinite; }
+
+/* Map dot pulse — transform-box:fill-box is required for SVG circles
+   so scale() pivots around the circle's own center, not the SVG origin */
+@keyframes ping-dot { 0% { transform: scale(1); opacity: .8 } 100% { transform: scale(2.6); opacity: 0 } }
+.map-pulse {
+  animation: ping-dot 2.4s cubic-bezier(0,0,0.2,1) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Hide native disclosure triangle on <details> across browsers */
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::marker { content: ""; }
+
+/* Case study thumbnail — graceful fallback when image not yet added */
+.case-thumb {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #243957;
+  background-image:
+    linear-gradient(135deg, rgba(196,154,108,0.08) 0%, transparent 50%),
+    linear-gradient(45deg, rgba(124,92,255,0.06) 0%, transparent 50%);
+}
+.case-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.case-thumb .placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(248,244,237,0.4);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.case-thumb .placeholder svg { opacity: 0.3 }
+.case-thumb-fb { background-color: #1A2B4A; }
+.case-thumb-th { background-color: #0A0A0A; }
+
+/* Subtle underline — for headers on light backgrounds */
+.u-gold {
+  background-image: linear-gradient(transparent 80%, rgba(196,154,108,0.55) 80%, rgba(196,154,108,0.55) 96%, transparent 96%);
+  padding: 0 4px;
+}
+.u-ai {
+  background-image: linear-gradient(transparent 80%, rgba(124,92,255,0.45) 80%, rgba(124,92,255,0.45) 96%, transparent 96%);
+  padding: 0 4px;
+}
+
+/* Solid marker — for hero on dark backgrounds (dark text needs full block to be visible) */
+.mk-gold {
+  background-color: #C49A6C;
+  color: #1B2D4A !important;
+  padding: 0.06em 0.32em;
+  border-radius: 3px;
+  line-height: 1.2;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.mk-ai {
+  background-color: #9F87FF;
+  color: #1B2D4A !important;
+  padding: 0.06em 0.32em;
+  border-radius: 3px;
+  line-height: 1.2;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Number counter style */
+.big-num { font-feature-settings: "tnum"; letter-spacing: -0.02em; }
+
+/* Testimonial quote */
+.q-mark::before {
+  content: '\201C';
+  font-family: 'Noto Serif TC', serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: #C49A6C;
+  display: block;
+  margin-bottom: -1rem;
+}
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- ============ FLOATING LINE BUTTON ============ -->
+<a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener"
+   class="fixed bottom-5 right-5 z-50 bg-[#06C755] text-white rounded-full pl-4 pr-5 py-3 shadow-xl shadow-[#06C755]/40 hover:shadow-2xl hover:scale-105 transition-all flex items-center gap-2 font-bold text-sm">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988 2.595a.233.233 0 0 1-.234.234H1.95a.234.234 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.13 0 .234.106.234.234v3.488h1.974c.128 0 .234.106.234.234v.234zm1.46 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm5.32 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.187-.093l-2.066-2.788v2.647a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.27a.234.234 0 0 1 .187.093l2.066 2.788V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm3.737-3.488H13.56v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-1.969v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-2.437a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h2.437c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234z"/>
+  </svg>
+  <span class="hidden sm:inline">LINE 詢問</span>
+</a>
+
+<!-- ============ NAV ============ -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-2">
+  <div class="bg-ink/85 backdrop-blur-md border border-white/10 rounded-full px-6 py-2.5 flex items-center gap-6 text-sm">
+    <a href="#top" class="text-cream font-bold tracking-wider serif">口碑製造所</a>
+    <span class="hidden md:flex gap-5 text-cream/70">
+      <a href="#services" class="hover:text-gold transition">服務</a>
+      <a href="#map" class="hover:text-gold transition">全國服務</a>
+      <a href="#cases" class="hover:text-gold transition">案例作品</a>
+      <a href="#faq" class="hover:text-gold transition">FAQ</a>
+    </span>
+    <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-gold text-ink font-bold px-4 py-1.5 rounded-full hover:bg-gold2 transition">免費健檢</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative bg-ink text-cream pt-36 pb-24 overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-ai/20 rounded-full blur-[120px]"></div>
+  <div class="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-gold/15 rounded-full blur-[120px]"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs mb-8">
+      <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+      <span class="mono text-cream/70">REAL VOICES · MADE TO BE FOUND</span>
+    </div>
+
+    <h1 class="serif text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] mb-8">
+      口碑，<br>
+      是<span class="text-gold">製造</span>出來的
+    </h1>
+
+    <p class="text-xl md:text-2xl text-cream/85 max-w-3xl mb-4 leading-relaxed">
+      <span class="mk-gold">真實口碑</span>，
+      被 <span class="text-gold">網友看見</span>，
+      被 <span class="mk-ai">AI 推薦</span>。
+    </p>
+    <p class="text-base md:text-lg text-cream/60 max-w-2xl mb-12 leading-relaxed">
+      在地真人寫手，把真實案例佈局到圖文、影音、FB 社團全平台，<br>
+      <span class="text-gold">每月 100+ 精準社團</span>同步曝光。<br>
+      AI 不寫文章，AI 只負責讓 ChatGPT、Perplexity 主動推薦你。
+    </p>
+
+    <div class="flex flex-wrap gap-4">
+      <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-gold text-ink font-bold px-8 py-4 rounded-full hover:bg-gold2 transition inline-flex items-center gap-2">
+        免費品牌 AI 健檢 <span>→</span>
+      </a>
+      <a href="#services" class="border border-cream/30 text-cream px-8 py-4 rounded-full hover:bg-white/5 transition">
+        看我們做什麼
+      </a>
+    </div>
+
+    <!-- Marquee tags -->
+    <div class="mt-20 pt-8 border-t border-white/10">
+      <p class="mono text-xs text-cream/40 mb-4">SERVING ACROSS</p>
+      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-cream/70">
+        <span>Mobile01</span><span>·</span>
+        <span>痞客邦</span><span>·</span>
+        <span>Dcard</span><span>·</span>
+        <span>小紅書</span><span>·</span>
+        <span>Threads</span><span>·</span>
+        <span>Instagram</span><span>·</span>
+        <span>PTT</span><span>·</span>
+        <span>YouTube</span><span>·</span>
+        <span>TikTok</span><span>·</span>
+        <span class="text-gold">Facebook 社團 ×100+</span><span>·</span>
+        <span>Google</span><span>·</span>
+        <span>ChatGPT</span><span>·</span>
+        <span>Perplexity</span><span>·</span>
+        <span>Gemini</span><span>·</span>
+        <span>Claude</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAIN POINTS ============ -->
+<section class="py-24 bg-cream">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16">
+      <p class="mono text-xs text-gold mb-3">THE PROBLEM</p>
+      <h2 class="serif text-3xl md:text-5xl font-black leading-tight">
+        你的客戶不只用 Google，<br>
+        也問 <span class="u-ai">ChatGPT</span>。
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white border border-ink/10 rounded-2xl p-8">
+        <div class="text-5xl mono text-gold mb-4">01</div>
+        <h3 class="serif text-xl font-bold mb-3">搜你的品牌名</h3>
+        <p class="text-ink/70 leading-relaxed">第一頁是負評霸版、一片空白、或全部都是對手。</p>
+      </div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-8">
+        <div class="text-5xl mono text-ai mb-4">02</div>
+        <h3 class="serif text-xl font-bold mb-3">問 ChatGPT「推薦 XX」</h3>
+        <p class="text-ink/70 leading-relaxed">名單裡沒有你，全是被 AI 引用的競爭對手。</p>
+      </div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-8">
+        <div class="text-5xl mono text-ink/40 mb-4">03</div>
+        <h3 class="serif text-xl font-bold mb-3">找過 AI 內容農場</h3>
+        <p class="text-ink/70 leading-relaxed">文案像機器人、被平台砍、客戶一看就知道是假的。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-24 bg-ink text-cream relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-40"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="mb-16">
+      <p class="mono text-xs text-gold mb-3">SIX SERVICES</p>
+      <h2 class="serif text-3xl md:text-5xl font-black leading-tight">
+        六項服務，<br>
+        <span class="text-gold">一條龍</span>製造你的品牌口碑。
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Service 1 -->
+      <div class="svc-block bg-navy border border-white/10 rounded-2xl p-7">
+        <div class="flex items-start justify-between mb-5">
+          <div class="w-12 h-12 bg-gold/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931z"/></svg>
+          </div>
+          <span class="text-xs mono text-gold/70">01</span>
+        </div>
+        <h3 class="serif text-xl font-bold mb-2">口碑文案製造</h3>
+        <p class="text-cream/70 text-sm mb-5 leading-relaxed">在地真人寫手親筆寫，看得到、找得到、信得過。</p>
+        <ul class="space-y-1.5 text-sm text-cream/80 mb-4">
+          <li>· 真人寫手親筆，每篇都有真實細節</li>
+          <li>· 跨平台適配，一篇不重用</li>
+          <li>· 揭露合規，不被檢舉下架</li>
+        </ul>
+        <p class="text-xs text-gold/80 border-t border-white/10 pt-3 mono">適合 · 要產量也要品質的品牌</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="svc-block bg-navy border border-white/10 rounded-2xl p-7">
+        <div class="flex items-start justify-between mb-5">
+          <div class="w-12 h-12 bg-gold/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>
+          </div>
+          <span class="text-xs mono text-gold/70">02</span>
+        </div>
+        <h3 class="serif text-xl font-bold mb-2">平台口碑佈局</h3>
+        <p class="text-cream/70 text-sm mb-5 leading-relaxed">圖文 + 影音 + FB 社團，全平台一條龍。</p>
+        <ul class="space-y-1.5 text-sm text-cream/80 mb-4">
+          <li>· 圖文 6 平台：Mobile01、Dcard、痞客邦、小紅書、Threads、IG</li>
+          <li>· 影音 2 平台：YouTube、TikTok 短影音</li>
+          <li>· <span class="text-gold font-bold">每月鋪 100+ FB 目標社團</span>，精準觸及</li>
+        </ul>
+        <p class="text-xs text-gold/80 border-t border-white/10 pt-3 mono">適合 · 要全平台覆蓋的品牌</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="svc-block bg-navy border border-white/10 rounded-2xl p-7">
+        <div class="flex items-start justify-between mb-5">
+          <div class="w-12 h-12 bg-gold/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+          </div>
+          <span class="text-xs mono text-gold/70">03</span>
+        </div>
+        <h3 class="serif text-xl font-bold mb-2">SEO + AEO 雙軌優化</h3>
+        <p class="text-cream/70 text-sm mb-5 leading-relaxed">Google 找得到你，AI 看得懂你。</p>
+        <ul class="space-y-1.5 text-sm text-cream/80 mb-4">
+          <li>· 結構化資料完整部署</li>
+          <li>· 答案式段落設計</li>
+          <li>· llms.txt 主動引導 AI</li>
+        </ul>
+        <p class="text-xs text-gold/80 border-t border-white/10 pt-3 mono">適合 · 要長期自然流量的品牌</p>
+      </div>
+
+      <!-- Service 4 - AI -->
+      <div class="svc-block ai bg-gradient-to-br from-navy via-navy2 to-navy border border-ai/30 rounded-2xl p-7 relative">
+        <div class="flex items-start justify-between mb-5">
+          <div class="w-12 h-12 bg-ai/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-ai2" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/></svg>
+          </div>
+          <div class="flex flex-col items-end gap-1.5">
+            <span class="inline-flex items-center gap-1.5 bg-ai/20 border border-ai/40 rounded-full px-2.5 py-0.5">
+              <span class="w-1.5 h-1.5 bg-ai rounded-full ai-dot"></span>
+              <span class="text-[10px] mono text-ai2 font-bold">AI</span>
+            </span>
+            <span class="text-xs mono text-ai2/60">04</span>
+          </div>
+        </div>
+        <h3 class="serif text-xl font-bold mb-2">GEO 答案佔位工程</h3>
+        <p class="text-cream/70 text-sm mb-5 leading-relaxed">讓 ChatGPT、Perplexity、Gemini、Claude 把你寫進答案。</p>
+        <ul class="space-y-1.5 text-sm text-cream/80 mb-4">
+          <li>· 100 個高價值提問挖掘</li>
+          <li>· 6 大 AI 引擎現況測試</li>
+          <li>· 兩週迭代追蹤改善</li>
+        </ul>
+        <p class="text-xs text-ai2/90 border-t border-white/10 pt-3 mono">適合 · 怕被 AI 搜尋淘汰的品牌</p>
+      </div>
+
+      <!-- Service 5 - AI -->
+      <div class="svc-block ai bg-gradient-to-br from-navy via-navy2 to-navy border border-ai/30 rounded-2xl p-7 relative">
+        <div class="flex items-start justify-between mb-5">
+          <div class="w-12 h-12 bg-ai/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-ai2" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div class="flex flex-col items-end gap-1.5">
+            <span class="inline-flex items-center gap-1.5 bg-ai/20 border border-ai/40 rounded-full px-2.5 py-0.5">
+              <span class="w-1.5 h-1.5 bg-ai rounded-full ai-dot"></span>
+              <span class="text-[10px] mono text-ai2 font-bold">AI</span>
+            </span>
+            <span class="text-xs mono text-ai2/60">05</span>
+          </div>
+        </div>
+        <h3 class="serif text-xl font-bold mb-2">品牌信號雷達</h3>
+        <p class="text-cream/70 text-sm mb-5 leading-relaxed">每週掃描 Google + 6 大 AI 引擎，看你的品牌被怎麼說。</p>
+        <ul class="space-y-1.5 text-sm text-cream/80 mb-4">
+          <li>· 負評即時偵測警示</li>
+          <li>· AI 引用率每週追蹤</li>
+          <li>· 情緒分析儀表板</li>
+        </ul>
+        <p class="text-xs text-ai2/90 border-t border-white/10 pt-3 mono">適合 · 在意品牌聲譽的中大型品牌</p>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="svc-block bg-navy border border-white/10 rounded-2xl p-7">
+        <div class="flex items-start justify-between mb-5">
+          <div class="w-12 h-12 bg-gold/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+          </div>
+          <span class="text-xs mono text-gold/70">06</span>
+        </div>
+        <h3 class="serif text-xl font-bold mb-2">品牌數位形象建置</h3>
+        <p class="text-cream/70 text-sm mb-5 leading-relaxed">從零打造品牌數位資產。</p>
+        <ul class="space-y-1.5 text-sm text-cream/80 mb-4">
+          <li>· 品牌落地頁設計</li>
+          <li>· 部落格架構規劃</li>
+          <li>· 多平台統一視覺</li>
+        </ul>
+        <p class="text-xs text-gold/80 border-t border-white/10 pt-3 mono">適合 · 剛起步的新品牌</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TAIWAN MAP ============ -->
+<section id="map" class="py-24 bg-gradient-to-b from-cream to-cream2">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16 text-center">
+      <p class="mono text-xs text-gold mb-3">NATIONWIDE COVERAGE</p>
+      <h2 class="serif text-3xl md:text-5xl font-black leading-tight mb-4">
+        服務全台，<br>
+        從 <span class="u-gold">北到南</span>、從產業到平台。
+      </h2>
+      <p class="text-lg text-ink/70 max-w-2xl mx-auto">在地寫手 + 跨區佈局，每個縣市都有我們的口碑足跡。</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Taiwan Map SVG — 22 縣市真實 polygon (參考 taiwantrip.com.tw image-map 座標) -->
+      <div class="relative flex justify-center">
+        <svg viewBox="40 40 640 890" class="w-full max-w-md" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tw-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1B2D4A"/>
+              <stop offset="100%" stop-color="#243957"/>
+            </linearGradient>
+          </defs>
+
+          <!-- 主島 19 縣市 -->
+          <g fill="url(#tw-grad)" stroke="#C49A6C" stroke-width="0.8" stroke-linejoin="round" opacity="0.95">
+            <polygon points="548,124 561,134 572,142 568,130 576,123 573,103 562,85 551,89 539,99 547,107"/>
+            <polygon points="595,91 588,79 579,79 565,57 558,57 528,78 519,91 502,103 519,120 516,135 543,129 543,112 534,98 562,77 572,95 578,117 584,125 572,135 576,140 573,146 552,134 547,130 512,141 500,147 516,174 528,173 541,205 568,197 570,181 614,151 623,150 640,135 654,130 669,131 655,118 641,103 626,99 625,106 611,109 621,119 615,124 594,120 581,103 590,99"/>
+            <polygon points="598,92 619,98 609,106 614,118 596,119 586,102 595,99"/>
+            <polygon points="424,147 471,113 490,107 513,115 513,131 502,143 496,149 509,175 525,177 536,208 528,233 504,214 503,191 490,188 470,180 454,159"/>
+            <polygon points="407,172 425,153 449,161 465,180 500,195 497,214 505,223 531,240 512,266 494,275 495,264 484,248 459,239 410,206 419,199 432,199 424,180"/>
+            <polygon points="403,202 412,190 425,188 419,180 402,177 397,190"/>
+            <polygon points="624,292 650,227 637,209 632,177 651,139 627,155 572,186 571,201 543,214 534,231 533,250 511,273 520,284 539,282 576,294 592,286"/>
+            <polygon points="394,210 382,225 374,232 364,236 336,283 364,302 394,295 417,303 433,306 441,309 482,284 489,265 478,249 449,240 431,233 423,222"/>
+            <polygon points="331,293 310,333 314,354 355,378 375,385 390,358 406,355 413,349 424,348 435,345 474,328 486,337 505,345 520,340 515,318 527,296 534,288 515,288 507,277 486,284 482,294 471,297 443,314 403,308 393,301 371,310"/>
+            <polygon points="305,341 310,358 340,374 332,379 339,423 354,437 328,440 301,436 279,432 259,436 254,432"/>
+            <polygon points="223,509 225,485 248,439 263,439 279,438 310,439 348,446 348,480 373,480 370,488 328,486 307,475 268,493 258,504 249,506 241,517"/>
+            <polygon points="339,381 351,386 362,389 380,390 398,361 408,367 417,358 429,360 449,345 474,333 490,348 513,351 511,364 501,382 507,398 489,434 500,448 493,476 483,483 480,496 465,501 458,515 413,514 402,498 402,492 376,479 354,478 351,465 365,435 345,422"/>
+            <polygon points="545,291 578,301 591,295 620,296 627,306 606,325 604,345 599,361 599,373 596,384 576,490 578,506 556,510 550,516 548,532 534,585 525,584 466,552 465,540 449,530 461,526 462,514 476,500 485,496 490,486 500,473 506,451 499,432 513,396 505,381 518,361 522,346 532,344 522,315"/>
+            <polygon points="555,516 570,511 578,521 566,552 562,576 564,599 533,655 517,658 516,670 471,727 462,763 458,777 450,799 451,819 423,807 422,794 413,793 404,750 408,722 418,708 434,700 437,690 437,678 423,661 429,605 434,577 444,563 463,557 524,589 534,591 539,583 548,551"/>
+            <polygon points="303,518 314,510 321,514 327,517 315,524"/>
+            <polygon points="229,520 227,561 246,568 277,536 302,536 310,532 317,527 300,522 300,515 317,507 332,515 333,525 326,527 313,537 329,549 333,557 333,564 342,581 352,573 360,582 369,566 423,522 413,515 399,499 396,491 379,483 379,490 324,493 306,479 270,499 263,507 250,512 245,522"/>
+            <polygon points="247,663 253,658 282,666 306,653 309,643 317,640 328,621 349,605 356,588 337,587 323,560 310,541 298,542 272,544 260,565 254,565 249,572 226,568 213,603 223,637"/>
+            <polygon points="312,768 271,732 277,717 251,670 276,669 297,667 308,663 315,645 324,641 326,631 351,606 366,571 394,549 427,519 453,520 444,528 456,545 431,567 424,607 417,633 412,642 419,656 398,666 368,659 349,668 338,675 318,683 317,729 321,743"/>
+            <polygon points="319,772 327,741 322,731 324,686 339,683 356,669 374,666 383,675 393,671 401,678 414,667 433,680 428,696 409,709 399,743 410,795 418,810 428,821 449,825 455,864 448,892 447,909 429,890 422,901 404,872 411,856 387,821 334,771 325,777"/>
+          </g>
+
+          <!-- 離島：馬祖、金門、澎湖 -->
+          <g fill="#243957" stroke="#C49A6C" stroke-width="0.8" stroke-linejoin="round" opacity="0.75">
+            <polygon points="106,237 98,256 88,250 72,237 52,218 52,207 58,204 60,213 69,209 70,198 73,185 86,177 101,171 108,172 119,173 128,178 122,184 109,191 109,182 98,179 89,182 91,191 81,191 75,194 74,202 80,209 63,224 79,238 91,239 94,249"/>
+            <polygon points="115,294 113,307 104,309 94,301 90,310 84,316 72,315 71,327 84,316 93,319 91,327 102,332 113,317 125,322 132,310 127,299"/>
+            <polygon points="104,461 95,470 86,485 82,496 74,499 73,518 81,522 83,509 93,497 102,506 92,523 105,531 122,515 130,519 118,507 108,505 101,486 87,484 96,473 104,472"/>
+          </g>
+
+          <!-- 離島標籤 -->
+          <text x="138" y="218" fill="#1B2D4A" font-size="13" font-weight="600" font-family="Noto Sans TC" opacity="0.7">馬祖</text>
+          <text x="142" y="318" fill="#1B2D4A" font-size="13" font-weight="600" font-family="Noto Sans TC" opacity="0.7">金門</text>
+          <text x="138" y="500" fill="#1B2D4A" font-size="13" font-weight="600" font-family="Noto Sans TC" opacity="0.7">澎湖</text>
+
+          <!-- 主要城市標點 + 標籤 -->
+          <g>
+            <circle cx="558" cy="115" r="9" fill="#C49A6C"/>
+            <circle cx="558" cy="115" r="9" fill="none" stroke="#C49A6C" stroke-width="2" class="map-pulse"/>
+            <text x="585" y="122" fill="#1B2D4A" font-size="20" font-weight="700" font-family="Noto Sans TC">台北</text>
+          </g>
+          <g>
+            <circle cx="480" cy="170" r="7" fill="#C49A6C"/>
+            <text x="395" y="178" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">桃園</text>
+          </g>
+          <g>
+            <circle cx="430" cy="215" r="6" fill="#C49A6C"/>
+            <text x="345" y="222" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">新竹</text>
+          </g>
+          <g>
+            <circle cx="585" cy="225" r="6" fill="#C49A6C"/>
+            <text x="610" y="232" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">宜蘭</text>
+          </g>
+          <g>
+            <circle cx="430" cy="335" r="9" fill="#7C5CFF"/>
+            <circle cx="430" cy="335" r="9" fill="none" stroke="#7C5CFF" stroke-width="2" class="map-pulse"/>
+            <text x="335" y="343" fill="#1B2D4A" font-size="20" font-weight="700" font-family="Noto Sans TC">台中</text>
+          </g>
+          <g>
+            <circle cx="555" cy="420" r="6" fill="#C49A6C"/>
+            <text x="580" y="428" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">花蓮</text>
+          </g>
+          <g>
+            <circle cx="320" cy="525" r="6" fill="#C49A6C"/>
+            <text x="225" y="533" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">嘉義</text>
+          </g>
+          <g>
+            <circle cx="285" cy="605" r="7" fill="#C49A6C"/>
+            <text x="195" y="613" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">台南</text>
+          </g>
+          <g>
+            <circle cx="350" cy="660" r="9" fill="#C49A6C"/>
+            <circle cx="350" cy="660" r="9" fill="none" stroke="#C49A6C" stroke-width="2" class="map-pulse"/>
+            <text x="252" y="668" fill="#1B2D4A" font-size="20" font-weight="700" font-family="Noto Sans TC">高雄</text>
+          </g>
+          <g>
+            <circle cx="490" cy="685" r="6" fill="#C49A6C"/>
+            <text x="515" y="693" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">台東</text>
+          </g>
+          <g>
+            <circle cx="395" cy="800" r="6" fill="#C49A6C"/>
+            <text x="420" y="808" fill="#1B2D4A" font-size="17" font-weight="600" font-family="Noto Sans TC">屏東</text>
+          </g>
+
+          <!-- 指北針 -->
+          <g transform="translate(645, 80)">
+            <circle r="22" fill="none" stroke="#C49A6C" stroke-width="1" opacity="0.3"/>
+            <text y="6" text-anchor="middle" fill="#C49A6C" font-size="14" font-family="JetBrains Mono" opacity="0.6">N</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Map info -->
+      <div>
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="bg-white border border-ink/10 rounded-2xl p-5">
+            <div class="text-4xl serif font-black text-navy big-num mb-1">11</div>
+            <p class="text-sm text-ink/70">服務縣市</p>
+          </div>
+          <div class="bg-white border border-ink/10 rounded-2xl p-5">
+            <div class="text-4xl serif font-black text-navy big-num mb-1">9</div>
+            <p class="text-sm text-ink/70">產業經驗</p>
+          </div>
+          <div class="bg-white border border-gold/40 rounded-2xl p-5">
+            <div class="text-4xl serif font-black text-gold big-num mb-1">100+</div>
+            <p class="text-sm text-ink/70">每月 FB 社團曝光</p>
+          </div>
+          <div class="bg-ink text-cream rounded-2xl p-5">
+            <div class="text-4xl serif font-black text-ai2 big-num mb-1">6</div>
+            <p class="text-sm text-cream/70">AI 引擎追蹤</p>
+          </div>
+        </div>
+
+        <p class="mono text-xs text-ink/50 mb-3">服務過的產業</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">醫美 · 診所</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">餐飲 · 連鎖</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">裝潢 · 設計</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">汽車美容</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">精品旅宿</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">電商 · 美妝</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">教育 · 顧問</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">B2B SaaS</span>
+          <span class="bg-white border border-ink/15 rounded-full px-3 py-1 text-sm">個人品牌</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO / 案例作品 ============ -->
+<section id="cases" class="py-24 bg-ink text-cream relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="mb-16">
+      <p class="mono text-xs text-gold mb-3">REAL WORK · REAL RESULTS</p>
+      <h2 class="serif text-3xl md:text-5xl font-black leading-tight mb-4">
+        看我們<span class="text-gold">寫過什麼</span>，<br>
+        被網友<span class="text-ai2">看過幾次</span>。
+      </h2>
+      <p class="text-cream/60 text-base md:text-lg max-w-2xl">真實作品、真實互動、真實瀏覽。每一篇都是真人寫手親筆寫進真實平台的口碑文。</p>
+    </div>
+
+    <!-- Featured: 屏東辦桌（病毒級） -->
+    <a href="assets/cases/case-01-banquet.webp" target="_blank" rel="noopener" class="block bg-gradient-to-br from-gold/20 via-navy to-navy border border-gold/40 rounded-3xl p-8 mb-5 hover:border-gold/70 transition">
+      <div class="grid md:grid-cols-[280px_1fr_auto] gap-6 items-center">
+        <div class="case-thumb case-thumb-th max-w-xs mx-auto md:mx-0" style="aspect-ratio:9/12;">
+          <img src="assets/cases/case-01-banquet.webp" alt="屏東辦桌 Threads 病毒級案例" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>THREADS</span><span class="text-cream/30">★ 病毒級案例</span></div>
+        </div>
+        <div>
+          <div class="flex items-center gap-3 mb-4 flex-wrap">
+            <span class="bg-black text-white text-xs px-3 py-1 rounded-full font-bold mono">Threads</span>
+            <span class="bg-cream/10 text-cream/80 text-xs px-3 py-1 rounded-full">婚禮辦桌 · 屏東</span>
+            <span class="bg-gold/20 text-gold text-xs px-3 py-1 rounded-full font-bold mono">★ FEATURED</span>
+          </div>
+          <h3 class="serif text-2xl md:text-3xl font-bold mb-3 leading-snug">「現在的辦桌真的進化到很恐怖的境界。」</h3>
+          <p class="text-cream/70 text-sm mb-4">屏東知名總舖師戶外婚宴口碑文。從「百萬烤箱載到草地」「鮑魚梅森罐裝」「龍蝦一人一隻」「米糕做成台灣形狀」帶出辦桌進化感，最後拋問互動。</p>
+        </div>
+        <div class="grid grid-cols-4 md:grid-cols-2 gap-4 text-center md:text-left">
+          <div><div class="serif text-2xl md:text-3xl font-black text-gold big-num">3.5萬</div><p class="text-xs text-cream/60 mono">LIKES</p></div>
+          <div><div class="serif text-2xl md:text-3xl font-black text-cream big-num">649</div><p class="text-xs text-cream/60 mono">REPLIES</p></div>
+          <div><div class="serif text-2xl md:text-3xl font-black text-cream big-num">6,764</div><p class="text-xs text-cream/60 mono">QUOTES</p></div>
+          <div><div class="serif text-2xl md:text-3xl font-black text-ai2 big-num">62萬</div><p class="text-xs text-cream/60 mono">VIEWS</p></div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Grid: 6 cases -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Case 2: 鼎創驗屋 -->
+      <a href="assets/cases/case-02-inspection.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-th mb-4">
+          <img src="assets/cases/case-02-inspection.webp" alt="驗屋服務 Threads 案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>THREADS</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-black text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">Threads</span>
+          <span class="text-xs text-cream/60">驗屋服務</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「陪爸媽驗退休宅，真的被現在的科技嚇到... 那些看不見的磁磚空鼓跟漏水直接現形！」</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 6,191</span>
+          <span class="text-cream/60">💬 731</span>
+          <span class="text-ai2 ml-auto">52萬瀏覽</span>
+        </div>
+      </a>
+
+      <!-- Case 3: 楓藝室內設計 -->
+      <a href="assets/cases/case-03-interior-design.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-th mb-4">
+          <img src="assets/cases/case-03-interior-design.webp" alt="高雄室內設計 Threads 案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>THREADS</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-black text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">Threads</span>
+          <span class="text-xs text-cream/60">室內設計 · 高雄</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「弟弟人生第一間房，12 坪兩房兩廳... 全靠設計師精算每一寸，才能把小空間用到極致。」</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 5,473</span>
+          <span class="text-cream/60">💬 73</span>
+          <span class="text-ai2 ml-auto">44萬瀏覽</span>
+        </div>
+      </a>
+
+      <!-- Case 4: 台南鰻魚飯 -->
+      <a href="assets/cases/case-04-eel-rice.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-fb mb-4">
+          <img src="assets/cases/case-04-eel-rice.webp" alt="台南鰻魚飯 FB 社團案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>FB 社團</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-[#1877F2] text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">FB 社團</span>
+          <span class="text-xs text-cream/60">餐飲 · 台南</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「在台南生活久了，美食真的吃不完，但有些店... 吃一次就會被記住！」鰻魚飯專賣店深度分享。</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 680+</span>
+          <span class="text-cream/60">💬 33</span>
+          <span class="text-cream/60 ml-auto">91 分享</span>
+        </div>
+      </a>
+
+      <!-- Case 5: 台南火鍋 -->
+      <a href="assets/cases/case-05-hotpot.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-fb mb-4">
+          <img src="assets/cases/case-05-hotpot.webp" alt="台南火鍋 FB 社團案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>FB 社團</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-[#1877F2] text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">FB 社團</span>
+          <span class="text-xs text-cream/60">餐飲 · 台南</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「台南高 CP 值火鍋吃到飽！318 元起平價個人火鍋，近百種食材任你夾。」</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 358</span>
+          <span class="text-cream/60">💬 113</span>
+          <span class="text-cream/60 ml-auto">79 分享</span>
+        </div>
+      </a>
+
+      <!-- Case 6: 興泰汽車 -->
+      <a href="assets/cases/case-06-auto-repair.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-fb mb-4">
+          <img src="assets/cases/case-06-auto-repair.webp" alt="台南汽車維修 FB 社團案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>FB 社團</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-[#1877F2] text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">FB 社團</span>
+          <span class="text-xs text-cream/60">汽車維修 · 台南</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「台南歸仁 40 年老店真的名不虛傳！把我的撞凹的小白救回來了。」汽車修復實錄。</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 161</span>
+          <span class="text-cream/60">💬 16</span>
+          <span class="text-cream/60 ml-auto">16 分享</span>
+        </div>
+      </a>
+
+      <!-- Case 7: 中醫針灸 -->
+      <a href="assets/cases/case-07-tcm.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-fb mb-4">
+          <img src="assets/cases/case-07-tcm.webp" alt="台南中醫 FB 社團案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>FB 社團</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-[#1877F2] text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">FB 社團</span>
+          <span class="text-xs text-cream/60">中醫 · 台南</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「老婆坐骨神經痛痛到走路不穩？幸好找到這位中醫神隊友！」針灸治療口碑分享。</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 160</span>
+          <span class="text-cream/60">💬 8</span>
+          <span class="text-cream/60 ml-auto">47 分享</span>
+        </div>
+      </a>
+
+      <!-- Case 8: 廚具開箱 -->
+      <a href="assets/cases/case-08-kitchen.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-fb mb-4">
+          <img src="assets/cases/case-08-kitchen.webp" alt="日系廚具 FB 專業社團案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>FB 專業社團</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-[#1877F2] text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">FB 專業社團</span>
+          <span class="text-xs text-cream/60">居家廚具</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「新家預算花在哪最值得？老婆點名：整套日系琺瑯廚具搬回家！」廚具最大討論區開箱。</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 128</span>
+          <span class="text-cream/60">💬 5</span>
+          <span class="text-cream/60 ml-auto">8 分享</span>
+        </div>
+      </a>
+
+      <!-- Case 9: 雲林牛肉麵 -->
+      <a href="assets/cases/case-09-beef-noodle.webp" target="_blank" rel="noopener" class="block bg-navy border border-white/10 rounded-2xl p-5 hover:border-gold/40 transition group">
+        <div class="case-thumb case-thumb-th mb-4">
+          <img src="assets/cases/case-09-beef-noodle.webp" alt="雲林牛肉麵 Threads 案例截圖" loading="lazy" onerror="this.style.display='none'">
+          <div class="placeholder"><span>THREADS</span><span class="text-cream/30">案例截圖區</span></div>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="bg-black text-white text-[10px] px-2 py-0.5 rounded-full font-bold mono">Threads</span>
+          <span class="text-xs text-cream/60">餐飲 · 雲林</span>
+        </div>
+        <p class="text-cream leading-relaxed mb-3 text-sm">「去雲林土庫千萬別隨便進一家店，因為你可能會跟我一樣，被這家牛肉麵驚艷到！」</p>
+        <div class="flex gap-3 text-xs pt-3 border-t border-white/10 mono">
+          <span class="text-gold">♥ 247</span>
+          <span class="text-cream/60">💬 11</span>
+          <span class="text-cream/60 ml-auto">309 引用</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- 產業 + 平台覆蓋摘要 -->
+    <div class="mt-12 grid md:grid-cols-2 gap-6">
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+        <p class="mono text-xs text-gold mb-3">服務過的產業</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">餐飲</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">室內設計</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">中醫</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">汽車維修</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">驗屋服務</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">辦桌喜宴</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">居家廚具</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">配鏡視光</span>
+          <span class="text-sm bg-white/5 border border-white/10 rounded-full px-3 py-1">素食餐廳</span>
+        </div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+        <p class="mono text-xs text-gold mb-3">作品散佈在</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-sm bg-black text-white rounded-full px-3 py-1 font-bold mono">Threads 串文</span>
+          <span class="text-sm bg-[#1877F2] text-white rounded-full px-3 py-1 font-bold mono">FB 在地社團</span>
+          <span class="text-sm bg-[#1877F2] text-white rounded-full px-3 py-1 font-bold mono">FB 興趣社團</span>
+          <span class="text-sm bg-[#1877F2] text-white rounded-full px-3 py-1 font-bold mono">FB 美食社團</span>
+          <span class="text-sm bg-[#1877F2] text-white rounded-full px-3 py-1 font-bold mono">FB 縣市社團</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="py-24 bg-cream">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16">
+      <p class="mono text-xs text-gold mb-3">WHY US</p>
+      <h2 class="serif text-3xl md:text-5xl font-black leading-tight">
+        為什麼選 <span class="u-gold">口碑製造所</span>？
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+      <div class="bg-white border border-ink/10 rounded-2xl p-6">
+        <div class="serif text-3xl font-black text-gold mb-3">01</div>
+        <h3 class="font-bold mb-2 leading-snug">在地真人寫手</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">真實的人、真實的經驗、真實的故事。</p>
+      </div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-6">
+        <div class="serif text-3xl font-black text-gold mb-3">02</div>
+        <h3 class="font-bold mb-2 leading-snug">圖文 + 影音全覆蓋</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">六大圖文平台 + YouTube、TikTok 短影音。</p>
+      </div>
+      <div class="bg-gradient-to-br from-gold/15 to-white border border-gold/40 rounded-2xl p-6">
+        <div class="serif text-3xl font-black text-gold mb-3">
+          <span class="big-num">100</span><span class="text-xl align-top">+</span>
+        </div>
+        <h3 class="font-bold mb-2 leading-snug">每月 FB 社團曝光</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">精準鋪到目標客群常駐的社團裡。</p>
+      </div>
+      <div class="bg-white border border-ai/30 rounded-2xl p-6">
+        <div class="serif text-3xl font-black text-ai mb-3">04</div>
+        <h3 class="font-bold mb-2 leading-snug">SEO + AEO + GEO 三軌</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">Google、ChatGPT、Perplexity 全包。</p>
+      </div>
+      <div class="bg-white border border-ink/10 rounded-2xl p-6">
+        <div class="serif text-3xl font-black text-gold mb-3">05</div>
+        <h3 class="font-bold mb-2 leading-snug">不打擦邊球</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">業配合規揭露，不偽造、不違規。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="py-24 bg-cream2">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="mb-12">
+      <p class="mono text-xs text-gold mb-3">FAQ</p>
+      <h2 class="serif text-3xl md:text-5xl font-black leading-tight">
+        想問的問題，<br>
+        <span class="u-gold">先一次說清楚</span>。
+      </h2>
+    </div>
+
+    <div class="space-y-3">
+      <details class="bg-white border border-ink/10 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>你們跟「找 KOL 寫業配」差在哪？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">KOL 是「網紅推薦」，我們是「素人分享」。準買家在做功課時，會搜尋一般使用者的真實心得 —— 那種「我自己用過」的口碑信任度，比 KOL 業配高得多。</p>
+      </details>
+
+      <details class="bg-white border border-ink/10 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>寫手會親自去用、去吃、去體驗嗎？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">看產業類型。餐廳、店家、體驗類服務，寫手會親自前往；線上服務、B2B 軟體則會深度訪談你的真實客戶。文章裡的細節決定可信度。</p>
+      </details>
+
+      <details class="bg-white border border-ink/10 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>我可以指定要發哪些平台嗎？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">可以。圖文平台 Mobile01、痞客邦、Dcard、小紅書、Threads、IG 共六大；影音平台 YouTube、TikTok 短影音；加上每月 100+ FB 目標社團。我們會依你的產業跟受眾建議組合，但最終由你決定。</p>
+      </details>
+
+      <details class="bg-white border border-gold/40 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>「每月 100+ FB 社團曝光」是怎麼運作的？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">我們會依你的產業跟客群，篩選出 100+ 個目標社團（媽媽社團、地區社團、興趣社團、產業社團等），把口碑文案以真人在地寫手帳號自然發佈。不是廣告、不是洗版，是真實使用心得在客群常駐的地方被看見。</p>
+      </details>
+
+      <details class="bg-white border border-ink/10 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>怎麼讓 ChatGPT、Perplexity 主動推薦我？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">這就是 GEO 答案佔位工程做的事。我們對 6 大 AI 引擎跑你產業的關鍵提問，找出「該被推薦但沒被推薦」的缺口，再針對性製作答案內容補上。</p>
+      </details>
+
+      <details class="bg-white border border-ink/10 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>多久看得到？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">平台曝光 1-2 週、Google 自然搜尋 3-6 個月、AI 引擎開始引用 4-8 週。我們不保證排名，但保證每月給你看得到的進度。</p>
+      </details>
+
+      <details class="bg-white border border-ink/10 rounded-2xl p-6 group">
+        <summary class="font-bold cursor-pointer flex items-center justify-between list-none">
+          <span>怎麼合作？怎麼報價？</span>
+          <span class="text-gold text-2xl group-open:rotate-45 transition">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed">每個品牌的產業、目標、平台組合都不同，我們不公開制式價目，採客製報價。先 30 分鐘免費品牌健檢，了解你的需求與現況後，由業務專員提供量身方案。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section id="contact" class="py-24 bg-ink text-cream relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-50"></div>
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-ai/15 rounded-full blur-[150px]"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/15 rounded-full blur-[120px]"></div>
+
+  <div class="relative max-w-4xl mx-auto px-6 text-center">
+    <p class="mono text-xs text-gold mb-4">FREE BRAND AI AUDIT</p>
+    <h2 class="serif text-4xl md:text-6xl font-black leading-tight mb-6">
+      你的品牌，<br>
+      值得被<span class="text-gold">搜尋到</span>，<br>
+      也值得被 <span class="text-ai2">AI 推薦</span>。
+    </h2>
+    <p class="text-lg text-cream/70 max-w-2xl mx-auto mb-12">
+      30 分鐘免費諮詢，幫你健檢品牌在 Google + 6 大 AI 引擎的曝光現況。
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 mb-16">
+      <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-[#06C755] text-white font-bold px-8 py-4 rounded-full hover:bg-[#05B04C] transition inline-flex items-center gap-3 shadow-lg shadow-[#06C755]/30">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988 2.595a.233.233 0 0 1-.234.234H1.95a.234.234 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.13 0 .234.106.234.234v3.488h1.974c.128 0 .234.106.234.234v.234zm1.46 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm5.32 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.187-.093l-2.066-2.788v2.647a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.27a.234.234 0 0 1 .187.093l2.066 2.788V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm3.737-3.488H13.56v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-1.969v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-2.437a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h2.437c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234z"/></svg>
+        加 LINE 直接聊
+      </a>
+      <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="border border-cream/30 text-cream px-8 py-4 rounded-full hover:bg-white/5 transition inline-flex items-center gap-2">
+        預約免費品牌健檢 →
+      </a>
+    </div>
+
+    <!-- LINE 主聯絡卡（含 QR Code） -->
+    <div class="max-w-3xl mx-auto bg-white/5 border border-[#06C755]/30 rounded-2xl p-8 mb-6">
+      <div class="grid md:grid-cols-[auto_1fr] gap-6 items-center">
+        <div class="bg-white p-3 rounded-xl shrink-0 mx-auto md:mx-0">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&margin=0&data=https%3A%2F%2Flin.ee%2FN0z1eq9" alt="口碑製造所 LINE QR Code" width="180" height="180" class="block">
+        </div>
+        <div class="text-center md:text-left">
+          <p class="mono text-xs text-[#06C755] mb-2">FASTEST WAY TO REACH US</p>
+          <h3 class="serif text-2xl font-bold text-cream mb-2">加 LINE 直接聊</h3>
+          <p class="text-cream/70 text-sm mb-4">手機掃左邊 QR、或點下方按鈕加為好友。我們在 LINE 上回覆最快。</p>
+          <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="inline-block">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" class="h-9">
+          </a>
+          <p class="mono text-xs text-cream/40 mt-3 break-all">lin.ee/N0z1eq9</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-sm text-cream/50 max-w-2xl mx-auto">
+      LINE 是我們的主要聯絡管道，回覆最快。如需 Email 或電話聯繫，加 LINE 後我們會提供。
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-cream/50 border-t border-white/10 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <div class="serif font-bold text-cream">口碑製造所 · WoM Factory</div>
+    <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="hover:text-gold transition">加 LINE 聯絡</a>
+    <div class="mono text-xs">© WoM Factory · 真人寫真實口碑</div>
+  </div>
+</footer>
+
+</body>
+</html>
