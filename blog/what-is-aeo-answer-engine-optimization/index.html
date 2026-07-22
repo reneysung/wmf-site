@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AEO 是什麼？答案引擎優化怎麼做，跟 SEO 差在哪｜口碑製造所</title>
+<meta name="description" content="AEO（答案引擎優化）是把內容整理成能被直接當答案引用的形式，出現在 Google 精選摘要、AI 概覽、語音搜尋裡。這篇說明 AEO 跟 SEO 的差別、答案引擎會抓哪種內容，以及一份可照做的實作清單。">
+<meta name="keywords" content="AEO, 答案引擎優化, AEO是什麼, AEO SEO 差別, 精選摘要, AI 概覽, 語音搜尋優化, FAQPage, 口碑製造所">
+<link rel="canonical" href="https://wmf.com.tw/blog/what-is-aeo-answer-engine-optimization/">
+
+<meta property="og:title" content="AEO 是什麼？答案引擎優化怎麼做，跟 SEO 差在哪">
+<meta property="og:description" content="AEO 是把內容整理成「能被直接當答案念出來」的形式。這篇講清楚它跟 SEO 的差別、答案引擎會抓什麼，附一份實作清單。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wmf.com.tw/blog/what-is-aeo-answer-engine-optimization/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="口碑製造所 WoM Factory">
+<meta property="og:image" content="https://wmf.com.tw/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AEO 答案引擎優化是什麼 — 口碑製造所知識庫">
+<meta property="article:section" content="知識庫">
+<meta property="article:published_time" content="2026-07-22">
+<meta property="article:modified_time" content="2026-07-22">
+<meta property="article:tag" content="AEO">
+<meta property="article:tag" content="答案引擎優化">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AEO 是什麼？答案引擎優化怎麼做，跟 SEO 差在哪">
+<meta name="twitter:description" content="AEO 是把內容整理成能被直接當答案引用的形式。附一份實作清單。">
+<meta name="twitter:image" content="https://wmf.com.tw/assets/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📣</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AEO 是什麼？答案引擎優化怎麼做，跟 SEO 差在哪",
+  "description": "AEO（答案引擎優化）是把內容整理成能被直接當答案引用的形式。本文說明 AEO 與 SEO 的差別、答案引擎會抓哪種內容，以及實作清單。",
+  "image": "https://wmf.com.tw/assets/og-image.jpg",
+  "author": {"@type": "Organization", "name": "口碑製造所編輯部", "url": "https://wmf.com.tw/"},
+  "publisher": {"@type": "Organization", "name": "口碑製造所", "url": "https://wmf.com.tw/", "logo": {"@type": "ImageObject", "url": "https://wmf.com.tw/assets/og-image.jpg"}},
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-22",
+  "mainEntityOfPage": "https://wmf.com.tw/blog/what-is-aeo-answer-engine-optimization/",
+  "inLanguage": "zh-Hant",
+  "about": [
+    {"@type": "Thing", "name": "AEO 答案引擎優化"},
+    {"@type": "Thing", "name": "搜尋引擎優化"},
+    {"@type": "Thing", "name": "精選摘要"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://wmf.com.tw/"},
+    {"@type": "ListItem", "position": 2, "name": "知識庫", "item": "https://wmf.com.tw/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "AEO 是什麼"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"AEO 跟 SEO 是同一件事嗎？","acceptedAnswer":{"@type":"Answer","text":"不是，但相關。SEO 的目標是讓網頁在搜尋結果排前面、被點進來，求的是那個點擊；AEO 的目標是讓內容變成「被直接當答案念出來」的形式，出現在精選摘要、語音搜尋、AI 概覽裡，使用者可能沒點進網站就得到解答。兩者互補，好的內容會同時做到。"}},
+    {"@type":"Question","name":"做了 AEO，使用者不點進網站，對品牌有什麼好處？","acceptedAnswer":{"@type":"Answer","text":"就算沒有點擊，你的品牌名、產品或觀點被當成「標準答案」念出來，本身就是曝光與信任。而且答案框通常會標註來源，願意深入了解的人會循線找到你；被引用累積起來，也讓搜尋引擎與 AI 更把你當該領域的可信來源。"}},
+    {"@type":"Question","name":"精選摘要可以花錢買嗎？","acceptedAnswer":{"@type":"Answer","text":"不行。精選摘要是 Google 自己從網頁抓取、判斷後顯示的，不能付費指定。能做的是把內容寫成「結論先講、一問一答、清單化」的好摘取結構，並確保資訊正確可信，提高被選中的機率。"}},
+    {"@type":"Question","name":"AEO 一定要用 FAQ 結構化資料嗎？","acceptedAnswer":{"@type":"Answer","text":"不是必須，但很有幫助。把常見問答上 FAQPage 結構化資料，等於直接告訴搜尋引擎「這裡有一組問與答」，被抓成答案的機率更高。不過前提仍是內容本身真的在回答問題；標記只是讓機器更好讀，不會讓空洞內容變成好答案。"}},
+    {"@type":"Question","name":"AEO 多久看得到效果？","acceptedAnswer":{"@type":"Answer","text":"要看內容被收錄與競爭情況。結構調整後，被 Google 收錄通常數天到數週；能不能搶到精選摘要或被 AI 概覽引用，則沒有保證的時間表，取決於你的內容是不是該題最清楚、最可信的來源。這是持續調整、觀察的過程，不是一次性設定。"}}
+  ]
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9B1X4WY6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C9B1X4WY6P');
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0F1419', navy: '#1B2D4A', navy2: '#243957',
+        gold: '#C49A6C', gold2: '#D9B98A',
+        ai: '#7C5CFF', ai2: '#9F87FF',
+        cream: '#F8F4ED', cream2: '#EFE8DA'
+      },
+      fontFamily: {
+        serif: ['"Noto Serif TC"', 'serif'],
+        sans: ['"Noto Sans TC"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans TC', sans-serif; color: #1A1A1A; background: #F8F4ED; }
+h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; letter-spacing: 0.02em; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+.grid-bg { background-image: linear-gradient(rgba(196,154,108,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(196,154,108,0.06) 1px, transparent 1px); background-size: 48px 48px; }
+.prose-art p { margin-bottom: 1.25em; line-height: 1.95; color: #26292E; font-size: 1.05rem; }
+.prose-art .lead { font-size: 1.2rem; line-height: 1.8; color: #1B2D4A; font-weight: 500; }
+.prose-art strong { color: #1B2D4A; font-weight: 700; }
+.prose-art ul, .prose-art ol { margin: 0.5em 0 1.75em; padding-left: 1.4em; }
+.prose-art ul li, .prose-art ol li { margin: 0.6em 0; line-height: 1.85; }
+.prose-art ul li::marker { color: #C49A6C; }
+.prose-art h2 { font-family: 'Noto Serif TC', serif; font-size: 1.7rem; font-weight: 800; line-height: 1.4; color: #0F1419; margin: 3rem 0 1.1rem; padding-left: 1rem; border-left: 4px solid #C49A6C; scroll-margin-top: 6rem; }
+@media (min-width: 768px) { .prose-art h2 { font-size: 2rem; } }
+.prose-art h3 { font-family: 'Noto Serif TC', serif; font-size: 1.25rem; font-weight: 700; color: #1B2D4A; margin: 2rem 0 0.75rem; }
+.cmp-wrap { overflow-x: auto; margin: 1.5em 0 2em; border: 1px solid #E3DAC9; border-radius: 16px; }
+.cmp { width: 100%; border-collapse: collapse; min-width: 620px; font-size: 0.95rem; }
+.cmp th, .cmp td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid #EBE3D4; vertical-align: top; line-height: 1.6; }
+.cmp thead th { background: #0F1419; color: #F8F4ED; font-weight: 700; border-bottom: none; }
+.cmp thead th:first-child { border-top-left-radius: 15px; }
+.cmp thead th:last-child { border-top-right-radius: 15px; }
+.cmp tbody tr:last-child td { border-bottom: none; }
+.cmp tbody th { background: #F3ECDD; color: #1B2D4A; font-weight: 700; white-space: nowrap; }
+.toc { background: #F3ECDD; border: 1px solid #E3DAC9; border-radius: 16px; padding: 1.25rem 1.5rem; margin: 0 0 2.5rem; }
+.toc p { font-weight: 700; color: #1B2D4A; margin-bottom: 0.5rem; font-size: 0.9rem; letter-spacing: 0.05em; }
+.toc ol { margin: 0; padding-left: 1.2rem; }
+.toc a { color: #26292E; text-decoration: none; }
+.toc a:hover { color: #9A6E3A; text-decoration: underline; }
+.faq-q { font-family: 'Noto Serif TC', serif; font-weight: 700; color: #0F1419; font-size: 1.12rem; margin-top: 1.75rem; }
+.callout { background: #FBF7EF; border: 1px solid #E3DAC9; border-left: 4px solid #C49A6C; border-radius: 12px; padding: 1.1rem 1.3rem; margin: 1.75em 0; }
+.callout p:last-child { margin-bottom: 0; }
+.rel { background:#F3ECDD; border:1px solid #E3DAC9; border-radius:14px; padding:1rem 1.25rem; margin:1.5em 0; }
+.rel a { color:#9A6E3A; font-weight:700; text-decoration:none; }
+.rel a:hover { text-decoration:underline; }
+</style>
+</head>
+
+<body class="antialiased">
+
+<a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="fixed bottom-5 right-5 z-50 bg-[#06C755] text-white rounded-full pl-4 pr-5 py-3 shadow-xl shadow-[#06C755]/40 hover:shadow-2xl hover:scale-105 transition-all flex items-center gap-2 font-bold text-sm">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988 2.595a.233.233 0 0 1-.234.234H1.95a.234.234 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.13 0 .234.106.234.234v3.488h1.974c.128 0 .234.106.234.234v.234zm1.46 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm5.32 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.187-.093l-2.066-2.788v2.647a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.27a.234.234 0 0 1 .187.093l2.066 2.788V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm3.737-3.488H13.56v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-1.969v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-2.437a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h2.437c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234z"/></svg>
+  <span class="hidden sm:inline">LINE 詢問</span>
+</a>
+
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-2">
+  <div class="bg-ink/85 backdrop-blur-md border border-white/10 rounded-full px-6 py-2.5 flex items-center gap-6 text-sm">
+    <a href="/" class="text-cream font-bold tracking-wider serif">口碑製造所</a>
+    <span class="hidden md:flex gap-5 text-cream/70">
+      <a href="/#services" class="hover:text-gold transition">服務</a>
+      <a href="/#cities" class="hover:text-gold transition">高雄/台南/嘉義/台中</a>
+      <a href="/#cases" class="hover:text-gold transition">案例作品</a>
+      <a href="/#faq" class="hover:text-gold transition">FAQ</a>
+    </span>
+    <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-gold text-ink font-bold px-4 py-1.5 rounded-full hover:bg-gold2 transition">免費健檢</a>
+  </div>
+</nav>
+
+<div class="bg-ink text-cream/60 pt-28 pb-4">
+  <div class="max-w-3xl mx-auto px-6 text-sm">
+    <a href="/" class="hover:text-gold transition">首頁</a>
+    <span class="mx-2 text-cream/30">/</span>
+    <a href="/blog/" class="hover:text-gold transition">知識庫</a>
+    <span class="mx-2 text-cream/30">/</span>
+    <span class="text-cream/80">AEO 是什麼</span>
+  </div>
+</div>
+
+<header class="relative bg-ink text-cream pt-6 pb-14 overflow-hidden border-b border-white/5">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-gold/15 rounded-full blur-[120px]"></div>
+  <div class="relative max-w-3xl mx-auto px-6">
+    <div class="flex items-center gap-3 mb-6 flex-wrap">
+      <span class="bg-gold/20 text-gold text-xs px-3 py-1 rounded-full font-bold">知識庫</span>
+      <span class="text-xs text-cream/50 mono">2026.07.22 · 約 8 分鐘</span>
+    </div>
+    <h1 class="serif text-3xl md:text-5xl font-black leading-[1.25] mb-6">
+      AEO 是什麼？<br>
+      <span class="text-gold">答案引擎優化</span>怎麼做
+    </h1>
+    <p class="text-lg text-cream/70 leading-relaxed max-w-2xl">
+      你搜「除濕機推薦」，最上面直接跳出一段答案，你看完就懂了、根本沒點進任何網站。那段答案是誰的？讓它是你的，就是 AEO 在做的事。
+    </p>
+  </div>
+</header>
+
+<article class="py-16">
+  <div class="max-w-3xl mx-auto px-6 prose-art">
+
+    <div class="toc">
+      <p>這篇會回答</p>
+      <ol>
+        <li><a href="#what">AEO 是什麼？</a></li>
+        <li><a href="#why">為什麼 AEO 現在變重要</a></li>
+        <li><a href="#vs">AEO 跟 SEO 差在哪（對照表）</a></li>
+        <li><a href="#pick">答案引擎會抓哪一種內容</a></li>
+        <li><a href="#do">AEO 實作清單</a></li>
+        <li><a href="#myth">三個常見誤解</a></li>
+        <li><a href="#faq">常見問題</a></li>
+      </ol>
+    </div>
+
+    <p class="lead">一句話：AEO 是把你的內容整理成「能被直接當答案念出來」的形式，讓它出現在精選摘要、語音助理、AI 概覽的回答裡。</p>
+
+    <h2 id="what">AEO 是什麼？</h2>
+    <p>AEO 是 Answer Engine Optimization 的縮寫，中文叫答案引擎優化。所謂「答案引擎」，指的是那些不只給你一串連結、還直接把答案端到你面前的地方：Google 最上方的精選摘要、手機語音助理念出來的那句話、還有搜尋頁頂端那段由 AI 生成的<strong>AI 概覽</strong>。</p>
+    <p>傳統搜尋給你十個藍色連結，要你自己點進去找答案。答案引擎則是幫你把答案抓好、整理好，直接顯示。AEO 要做的，就是讓「被抓來當答案的那段內容」是你的。</p>
+
+    <h2 id="why">為什麼 AEO 現在變重要</h2>
+    <p>因為越來越多搜尋，使用者在結果頁上就得到答案、不再往下點——業界叫這個現象「零點擊搜尋」。當 Google 直接給答案、AI 概覽越占越大版面，排名第一的連結被看到的機會反而被上面那塊答案框吃掉。</p>
+    <p>換句話說：<strong>只把網頁排到第一名，已經不等於被看到了</strong>。如果答案框裡念的是別人的內容，你的第一名等於站在看板後面。AEO 就是去搶那塊看板。</p>
+
+    <h2 id="vs">AEO 跟 SEO 差在哪</h2>
+    <p>兩個常被混講，但目標不同。攤開比最清楚：</p>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>面向</th><th>SEO 搜尋引擎優化</th><th>AEO 答案引擎優化</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>目標</th><td>讓網頁排前面、被點進來</td><td>讓內容被當答案直接顯示</td></tr>
+          <tr><th>求的是</th><td>那個點擊、把人帶到你的頁面</td><td>那個曝光、被念出來的答案位置</td></tr>
+          <tr><th>戰場</th><td>自然搜尋結果排名</td><td>精選摘要、語音、AI 概覽</td></tr>
+          <tr><th>內容重點</th><td>整頁的完整度與權重</td><td>單一問題的清楚、可直接摘取</td></tr>
+          <tr><th>成效衡量</th><td>排名、點擊、流量</td><td>有沒有被當答案、被引用</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>要注意：這不是二選一。SEO 是地基——內容要先能被搜到、被收錄、有一定權重，答案引擎才會考慮抓它。AEO 是在這個地基上，多做一層「把答案整理到好摘取」的工。好的內容兩件事同時做到。</p>
+
+    <h2 id="pick">答案引擎會抓哪一種內容</h2>
+    <p>觀察被選為答案的內容，通常有幾個共同點：</p>
+    <ul>
+      <li><strong>結論先講</strong>。第一句就把答案講完，後面再補充。答案引擎喜歡能直接抓一段就成立的段落。</li>
+      <li><strong>一問一答的結構</strong>。標題是使用者會問的問題，下面緊接著清楚回答。這也是為什麼 FAQ 段落特別容易被抓。</li>
+      <li><strong>清單與步驟</strong>。「有哪幾種」「怎麼做，分幾步」這類內容，很適合被整理成條列答案。</li>
+      <li><strong>資訊正確、來源可信</strong>。答案引擎不想給錯答案，會傾向抓看起來可信、有經驗、有依據的來源。這就接到 EEAT——有沒有真實經驗與可查證的資訊，是隱形的門檻。</li>
+      <li><strong>語意對得上問題</strong>。不是關鍵字塞得多，而是真的在回答那個問題的意圖。</li>
+    </ul>
+    <div class="callout">
+      <p>一個好記的判準：<strong>如果有人把你的某個段落單獨截圖出來，它讀起來還是一個完整、正確的答案嗎？</strong>如果是，它就有被當答案的體質。</p>
+    </div>
+
+    <h2 id="do">AEO 實作清單</h2>
+    <p>如果要把一篇內容做出 AEO 體質，可以照這幾點檢查：</p>
+    <ol>
+      <li>把讀者真正會問的問題，直接當成小標題（h2／h3）。</li>
+      <li>每個問題下，第一句就給結論，再展開細節。</li>
+      <li>能列點的就列點，能做成步驟的就編號。</li>
+      <li>整理一段真的常被問的 FAQ，並上 <strong>FAQPage 結構化資料</strong>，讓機器一眼看出這是一組問答。</li>
+      <li>放進可查證的具體資訊（實際做法、實際數字、實際案例），別只有形容詞。</li>
+      <li>確認頁面本身有被搜尋引擎收錄——沒被收錄，一切免談。</li>
+    </ol>
+
+    <div class="rel">
+      <p style="margin:0;">延伸閱讀：<a href="/blog/what-is-word-of-mouth-marketing/">口碑行銷是什麼？跟業配、KOL、廣告差在哪</a>——AEO 是把內容做成答案，口碑則決定這些答案背後夠不夠可信。</p>
+    </div>
+
+    <h2 id="myth">三個常見誤解</h2>
+    <ul>
+      <li><strong>「做了 AEO 就不用做 SEO 了」</strong>——錯。沒被收錄、沒有基本權重的頁面，根本進不了答案引擎的候選池。兩者是疊加，不是取代。</li>
+      <li><strong>「上了 FAQ 結構化資料就會被抓成答案」</strong>——結構化資料只是讓機器好讀，內容本身沒在好好回答問題，標記再多也沒用。</li>
+      <li><strong>「被當答案、使用者不點進來，等於白做」</strong>——被當成標準答案念出來，本身就是曝光與信任；答案框多半標來源，願意深入的人會循線找到你。</li>
+    </ul>
+
+    <div class="callout" style="background:#0F1419;border-color:rgba(196,154,108,0.3);border-left-color:#C49A6C;">
+      <p style="color:#F8F4ED;font-weight:700;font-family:'Noto Serif TC',serif;font-size:1.15rem;margin-bottom:0.5rem;">想知道你的品牌現在有沒有被當成答案？</p>
+      <p style="color:rgba(248,244,237,0.75);">我們的免費品牌健檢會實際跑你產業的常見提問，看現在 Google 答案框、AI 概覽裡念的是誰，缺口在哪。</p>
+      <p><a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#06C755] text-white font-bold px-6 py-3 rounded-full hover:bg-[#05B04C] transition mt-2">加 LINE 預約免費健檢 →</a></p>
+    </div>
+
+    <h2 id="faq">常見問題</h2>
+
+    <p class="faq-q">AEO 跟 SEO 是同一件事嗎？</p>
+    <p>不是，但相關。SEO 求的是排名與那個點擊；AEO 求的是讓內容被直接當答案念出來，出現在精選摘要、語音、AI 概覽裡。兩者互補，好的內容會同時做到。</p>
+
+    <p class="faq-q">做了 AEO，使用者不點進網站，對品牌有什麼好處？</p>
+    <p>就算沒點擊，品牌被當成「標準答案」念出來就是曝光與信任，答案框多半標來源，願意深入的人會循線找到你；被引用累積起來，也讓搜尋引擎與 AI 更把你當可信來源。</p>
+
+    <p class="faq-q">精選摘要可以花錢買嗎？</p>
+    <p>不行。精選摘要是 Google 自己抓取判斷後顯示的，不能付費指定。能做的是把內容寫成結論先講、一問一答、清單化的好摘取結構，並確保正確可信。</p>
+
+    <p class="faq-q">AEO 一定要用 FAQ 結構化資料嗎？</p>
+    <p>不是必須，但很有幫助。把常見問答上 FAQPage 結構化資料，等於直接告訴機器「這裡有一組問與答」。前提仍是內容真的在回答問題，標記只是讓機器更好讀。</p>
+
+    <p class="faq-q">AEO 多久看得到效果？</p>
+    <p>結構調整後收錄通常數天到數週；能不能搶到精選摘要或被 AI 概覽引用沒有保證時間表，取決於你的內容是不是該題最清楚、最可信的來源。這是持續調整、觀察的過程。</p>
+
+    <div class="mt-14 pt-8" style="border-top:1px solid #E3DAC9;">
+      <p class="text-sm" style="color:#5A5E66;margin-bottom:0.5rem;">作者：口碑製造所編輯部｜最後更新：2026 年 7 月 22 日</p>
+      <p class="text-sm" style="color:#5A5E66;">口碑製造所替品牌做 SEO、AEO、GEO 三軌優化，讓內容被搜到、被當答案、被 AI 引用。</p>
+    </div>
+
+  </div>
+</article>
+
+<section class="py-24 bg-ink text-cream relative overflow-hidden border-t border-white/5">
+  <div class="absolute inset-0 grid-bg opacity-50"></div>
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-ai/15 rounded-full blur-[150px]"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/15 rounded-full blur-[120px]"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center">
+    <p class="mono text-xs text-gold mb-4">FREE BRAND AI AUDIT</p>
+    <h2 class="serif text-3xl md:text-5xl font-black leading-tight mb-6">
+      你的品牌，<br>
+      值得被<span class="text-gold">搜尋到</span>，<br>
+      也值得被 <span class="text-ai2">AI 推薦</span>。
+    </h2>
+    <p class="text-lg text-cream/70 max-w-2xl mx-auto mb-10">
+      30 分鐘免費諮詢，幫你健檢品牌在 Google + 6 大 AI 引擎的曝光現況。
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-[#06C755] text-white font-bold px-8 py-4 rounded-full hover:bg-[#05B04C] transition inline-flex items-center gap-3 shadow-lg shadow-[#06C755]/30">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988 2.595a.233.233 0 0 1-.234.234H1.95a.234.234 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.13 0 .234.106.234.234v3.488h1.974c.128 0 .234.106.234.234v.234zm1.46 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm5.32 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.187-.093l-2.066-2.788v2.647a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.27a.234.234 0 0 1 .187.093l2.066 2.788V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm3.737-3.488H13.56v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-1.969v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-2.437a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h2.437c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234z"/></svg>
+        加 LINE 直接聊
+      </a>
+      <a href="/#services" class="border border-cream/30 text-cream px-8 py-4 rounded-full hover:bg-white/5 transition inline-flex items-center gap-2">
+        看我們怎麼做 →
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ink text-cream/50 border-t border-white/10 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <div class="serif font-bold text-cream">口碑製造所 · WoM Factory</div>
+    <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="hover:text-gold transition">加 LINE 聯絡</a>
+    <div class="mono text-xs">© WoM Factory · 真人寫真實口碑</div>
+  </div>
+</footer>
+
+</body>
+</html>

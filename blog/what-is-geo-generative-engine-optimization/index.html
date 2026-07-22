@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GEO 是什麼？怎麼讓 ChatGPT、Perplexity 主動推薦你的品牌｜口碑製造所</title>
+<meta name="description" content="GEO（生成式引擎優化）是讓品牌在 ChatGPT、Perplexity、Gemini 生成答案時被主動、正確地提到與引用。這篇說明 GEO 的由來、AI 推薦你之前在看什麼，以及答案佔位實際怎麼做，並誠實講清楚它的不確定性。">
+<meta name="keywords" content="GEO, 生成式引擎優化, GEO是什麼, 讓AI推薦品牌, ChatGPT 推薦, Perplexity, AI 引用, 答案佔位, 口碑製造所">
+<link rel="canonical" href="https://wmf.com.tw/blog/what-is-geo-generative-engine-optimization/">
+
+<meta property="og:title" content="GEO 是什麼？怎麼讓 ChatGPT、Perplexity 主動推薦你的品牌">
+<meta property="og:description" content="GEO 是讓品牌在 AI 生成答案時被主動、正確地引用。這篇講由來、AI 推薦你之前在看什麼、答案佔位怎麼做，並誠實講不確定性。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wmf.com.tw/blog/what-is-geo-generative-engine-optimization/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="口碑製造所 WoM Factory">
+<meta property="og:image" content="https://wmf.com.tw/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GEO 生成式引擎優化是什麼 — 口碑製造所知識庫">
+<meta property="article:section" content="知識庫">
+<meta property="article:published_time" content="2026-07-22">
+<meta property="article:modified_time" content="2026-07-22">
+<meta property="article:tag" content="GEO">
+<meta property="article:tag" content="生成式引擎優化">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GEO 是什麼？怎麼讓 ChatGPT、Perplexity 主動推薦你的品牌">
+<meta name="twitter:description" content="讓品牌在 AI 生成答案時被主動、正確地引用。誠實講清楚它的不確定性。">
+<meta name="twitter:image" content="https://wmf.com.tw/assets/og-image.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📣</text></svg>">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GEO 是什麼？怎麼讓 ChatGPT、Perplexity 主動推薦你的品牌",
+  "description": "GEO（生成式引擎優化）是讓品牌在 AI 生成答案時被主動、正確地提到與引用。本文說明 GEO 由來、AI 引用的判斷，以及答案佔位做法。",
+  "image": "https://wmf.com.tw/assets/og-image.jpg",
+  "author": {"@type": "Organization", "name": "口碑製造所編輯部", "url": "https://wmf.com.tw/"},
+  "publisher": {"@type": "Organization", "name": "口碑製造所", "url": "https://wmf.com.tw/", "logo": {"@type": "ImageObject", "url": "https://wmf.com.tw/assets/og-image.jpg"}},
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-22",
+  "mainEntityOfPage": "https://wmf.com.tw/blog/what-is-geo-generative-engine-optimization/",
+  "inLanguage": "zh-Hant",
+  "about": [
+    {"@type": "Thing", "name": "GEO 生成式引擎優化"},
+    {"@type": "Thing", "name": "生成式 AI"},
+    {"@type": "Thing", "name": "AI 搜尋"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://wmf.com.tw/"},
+    {"@type": "ListItem", "position": 2, "name": "知識庫", "item": "https://wmf.com.tw/blog/"},
+    {"@type": "ListItem", "position": 3, "name": "GEO 是什麼"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"GEO 跟 SEO、AEO 差在哪？","acceptedAnswer":{"@type":"Answer","text":"SEO 讓你被搜到、被點進來，求的是點擊；AEO 讓內容被當成答案框、語音、AI 概覽念出來；GEO 更進一步，是讓品牌在 ChatGPT、Perplexity、Gemini 這類生成式 AI 產生回答時，被主動提到與引用。三者是互補的路徑，共同的地基都是內容夠真、夠完整。AEO 與 GEO 在業界常被混用，界線還沒有公認定義。"}},
+    {"@type":"Question","name":"GEO 能保證讓 AI 推薦我嗎？","acceptedAnswer":{"@type":"Answer","text":"不能。生成式 AI 是否引用、怎麼措辭，都有不確定性，任何保證「一定被 AI 推薦」的說法都要小心。GEO 能做的是把該被引用的真實內容備齊、把缺口補上、佈局到 AI 會參考的地方，提高被正確提到的機率，而不是保證結果。"}},
+    {"@type":"Question","name":"GEO 是 Google 官方推出的東西嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。GEO（Generative Engine Optimization）這個詞是 2023 年由 Aggarwal 等學者在一篇學術論文正式提出的，不是任何搜尋引擎或 AI 公司的官方項目。它描述的是一種因應生成式 AI 而生的優化實務。"}},
+    {"@type":"Question","name":"我的品牌很小，也需要做 GEO 嗎？","acceptedAnswer":{"@type":"Answer","text":"看你的客群會不會用 AI 做功課。如果你的準買家已經開始問 ChatGPT、Perplexity「推薦哪幾家」，而答案裡從來沒有你，那就是實際的缺口。品牌大小不是重點，重點是網路上有沒有足夠、一致、可信的內容讓 AI 有依據提到你。"}},
+    {"@type":"Question","name":"GEO 跟口碑行銷有關係嗎？","acceptedAnswer":{"@type":"Answer","text":"關係很深。生成式 AI 的答案是綜合網路上大量內容而來，當多個平台、多篇真實內容都一致地提到你、講得清楚，AI 就更有依據把你納入答案。扎實的口碑內容佈局，正是餵給 GEO 的原料。"}}
+  ]
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9B1X4WY6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C9B1X4WY6P');
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0F1419', navy: '#1B2D4A', navy2: '#243957',
+        gold: '#C49A6C', gold2: '#D9B98A',
+        ai: '#7C5CFF', ai2: '#9F87FF',
+        cream: '#F8F4ED', cream2: '#EFE8DA'
+      },
+      fontFamily: {
+        serif: ['"Noto Serif TC"', 'serif'],
+        sans: ['"Noto Sans TC"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans TC', sans-serif; color: #1A1A1A; background: #F8F4ED; }
+h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; letter-spacing: 0.02em; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+.grid-bg { background-image: linear-gradient(rgba(196,154,108,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(196,154,108,0.06) 1px, transparent 1px); background-size: 48px 48px; }
+.prose-art p { margin-bottom: 1.25em; line-height: 1.95; color: #26292E; font-size: 1.05rem; }
+.prose-art .lead { font-size: 1.2rem; line-height: 1.8; color: #1B2D4A; font-weight: 500; }
+.prose-art strong { color: #1B2D4A; font-weight: 700; }
+.prose-art ul, .prose-art ol { margin: 0.5em 0 1.75em; padding-left: 1.4em; }
+.prose-art ul li, .prose-art ol li { margin: 0.6em 0; line-height: 1.85; }
+.prose-art ul li::marker { color: #C49A6C; }
+.prose-art h2 { font-family: 'Noto Serif TC', serif; font-size: 1.7rem; font-weight: 800; line-height: 1.4; color: #0F1419; margin: 3rem 0 1.1rem; padding-left: 1rem; border-left: 4px solid #C49A6C; scroll-margin-top: 6rem; }
+@media (min-width: 768px) { .prose-art h2 { font-size: 2rem; } }
+.prose-art h3 { font-family: 'Noto Serif TC', serif; font-size: 1.25rem; font-weight: 700; color: #1B2D4A; margin: 2rem 0 0.75rem; }
+.cmp-wrap { overflow-x: auto; margin: 1.5em 0 2em; border: 1px solid #E3DAC9; border-radius: 16px; }
+.cmp { width: 100%; border-collapse: collapse; min-width: 620px; font-size: 0.95rem; }
+.cmp th, .cmp td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid #EBE3D4; vertical-align: top; line-height: 1.6; }
+.cmp thead th { background: #0F1419; color: #F8F4ED; font-weight: 700; border-bottom: none; }
+.cmp thead th:first-child { border-top-left-radius: 15px; }
+.cmp thead th:last-child { border-top-right-radius: 15px; }
+.cmp tbody tr:last-child td { border-bottom: none; }
+.cmp tbody th { background: #F3ECDD; color: #1B2D4A; font-weight: 700; white-space: nowrap; }
+.toc { background: #F3ECDD; border: 1px solid #E3DAC9; border-radius: 16px; padding: 1.25rem 1.5rem; margin: 0 0 2.5rem; }
+.toc p { font-weight: 700; color: #1B2D4A; margin-bottom: 0.5rem; font-size: 0.9rem; letter-spacing: 0.05em; }
+.toc ol { margin: 0; padding-left: 1.2rem; }
+.toc a { color: #26292E; text-decoration: none; }
+.toc a:hover { color: #9A6E3A; text-decoration: underline; }
+.faq-q { font-family: 'Noto Serif TC', serif; font-weight: 700; color: #0F1419; font-size: 1.12rem; margin-top: 1.75rem; }
+.callout { background: #FBF7EF; border: 1px solid #E3DAC9; border-left: 4px solid #C49A6C; border-radius: 12px; padding: 1.1rem 1.3rem; margin: 1.75em 0; }
+.callout p:last-child { margin-bottom: 0; }
+.rel { background:#F3ECDD; border:1px solid #E3DAC9; border-radius:14px; padding:1rem 1.25rem; margin:1.5em 0; }
+.rel a { color:#9A6E3A; font-weight:700; text-decoration:none; }
+.rel a:hover { text-decoration:underline; }
+</style>
+</head>
+
+<body class="antialiased">
+
+<a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="fixed bottom-5 right-5 z-50 bg-[#06C755] text-white rounded-full pl-4 pr-5 py-3 shadow-xl shadow-[#06C755]/40 hover:shadow-2xl hover:scale-105 transition-all flex items-center gap-2 font-bold text-sm">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988 2.595a.233.233 0 0 1-.234.234H1.95a.234.234 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.13 0 .234.106.234.234v3.488h1.974c.128 0 .234.106.234.234v.234zm1.46 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm5.32 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.187-.093l-2.066-2.788v2.647a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.27a.234.234 0 0 1 .187.093l2.066 2.788V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm3.737-3.488H13.56v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-1.969v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-2.437a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h2.437c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234z"/></svg>
+  <span class="hidden sm:inline">LINE 詢問</span>
+</a>
+
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-2">
+  <div class="bg-ink/85 backdrop-blur-md border border-white/10 rounded-full px-6 py-2.5 flex items-center gap-6 text-sm">
+    <a href="/" class="text-cream font-bold tracking-wider serif">口碑製造所</a>
+    <span class="hidden md:flex gap-5 text-cream/70">
+      <a href="/#services" class="hover:text-gold transition">服務</a>
+      <a href="/#cities" class="hover:text-gold transition">高雄/台南/嘉義/台中</a>
+      <a href="/#cases" class="hover:text-gold transition">案例作品</a>
+      <a href="/#faq" class="hover:text-gold transition">FAQ</a>
+    </span>
+    <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-gold text-ink font-bold px-4 py-1.5 rounded-full hover:bg-gold2 transition">免費健檢</a>
+  </div>
+</nav>
+
+<div class="bg-ink text-cream/60 pt-28 pb-4">
+  <div class="max-w-3xl mx-auto px-6 text-sm">
+    <a href="/" class="hover:text-gold transition">首頁</a>
+    <span class="mx-2 text-cream/30">/</span>
+    <a href="/blog/" class="hover:text-gold transition">知識庫</a>
+    <span class="mx-2 text-cream/30">/</span>
+    <span class="text-cream/80">GEO 是什麼</span>
+  </div>
+</div>
+
+<header class="relative bg-ink text-cream pt-6 pb-14 overflow-hidden border-b border-white/5">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-ai/20 rounded-full blur-[120px]"></div>
+  <div class="relative max-w-3xl mx-auto px-6">
+    <div class="flex items-center gap-3 mb-6 flex-wrap">
+      <span class="bg-gold/20 text-gold text-xs px-3 py-1 rounded-full font-bold">知識庫</span>
+      <span class="text-xs text-cream/50 mono">2026.07.22 · 約 8 分鐘</span>
+    </div>
+    <h1 class="serif text-3xl md:text-5xl font-black leading-[1.25] mb-6">
+      GEO 是什麼？<br>
+      怎麼讓 AI <span class="text-ai2">主動推薦</span>你
+    </h1>
+    <p class="text-lg text-cream/70 leading-relaxed max-w-2xl">
+      越來越多人不 Google 了，直接問 ChatGPT、Perplexity「推薦哪幾家」。如果那份答案裡從來沒有你的名字，你其實已經在缺席一個新的入口。GEO 就是去把那個位置補回來。
+    </p>
+  </div>
+</header>
+
+<article class="py-16">
+  <div class="max-w-3xl mx-auto px-6 prose-art">
+
+    <div class="toc">
+      <p>這篇會回答</p>
+      <ol>
+        <li><a href="#what">GEO 是什麼？從哪來的</a></li>
+        <li><a href="#vs">GEO 跟 SEO、AEO 差在哪（對照表）</a></li>
+        <li><a href="#how-ai">AI 推薦你之前，它在看什麼</a></li>
+        <li><a href="#do">GEO 實際怎麼做：答案佔位</a></li>
+        <li><a href="#honest">三個務實提醒（含不確定性）</a></li>
+        <li><a href="#faq">常見問題</a></li>
+      </ol>
+    </div>
+
+    <p class="lead">一句話：GEO 是讓你的品牌在 ChatGPT、Perplexity、Gemini 這類生成式 AI 回答時，被主動、正確地提到與引用。求的不是排名，是「在那份答案裡有你」。</p>
+
+    <h2 id="what">GEO 是什麼？從哪來的</h2>
+    <p>GEO 是 Generative Engine Optimization 的縮寫，中文叫生成式引擎優化。這個詞不是行銷公司自己喊的口號，而是 2023 年由 Aggarwal 等幾位學者（來自 Princeton、Georgia Tech 等機構）在一篇學術論文正式提出的，用來描述一件正在發生的事：當人們越來越常直接問 AI、而不是自己翻搜尋結果，品牌該怎麼在 AI 生成的答案裡被看見。</p>
+    <p>它跟傳統 SEO 的根本差別在於：SEO 面對的是「一份排序好的連結清單」，GEO 面對的是「一段被綜合寫出來的回答」。前者你想辦法排前面，後者你想辦法被寫進去。</p>
+
+    <h2 id="vs">GEO 跟 SEO、AEO 差在哪</h2>
+    <p>這三個縮寫是同一條演化線上的三站。放在一起看最清楚：</p>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>面向</th><th>SEO</th><th>AEO</th><th>GEO</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>面對的東西</th><td>搜尋結果連結清單</td><td>答案框、語音、AI 概覽</td><td>生成式 AI 的整段回答</td></tr>
+          <tr><th>你要的</th><td>排前面、被點進來</td><td>被當答案念出來</td><td>被主動提到、被引用</td></tr>
+          <tr><th>成效樣貌</th><td>排名、流量</td><td>搶到答案位</td><td>AI 回答裡出現你的名字</td></tr>
+          <tr><th>典型場景</th><td>Google 搜尋</td><td>「Hey Siri…」、精選摘要</td><td>問 ChatGPT「推薦哪幾家」</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>要提醒的是，<strong>AEO 跟 GEO 在業界常被混用</strong>，學術上也還沒有一條公認的界線。我們的習慣是：AEO 偏傳統的答案框與語音，GEO 偏 ChatGPT、Perplexity 這類生成式引擎。名詞不必糾結，重點是它們共用同一個地基——內容夠真、夠完整、夠一致。</p>
+
+    <h2 id="how-ai">AI 推薦你之前，它在看什麼</h2>
+    <p>生成式 AI 的回答，是綜合它讀過的大量網路內容而來。它不是憑空選一家推薦，而是根據「網路上關於這個問題，講得夠多、夠一致、夠可信的是誰」。實務上觀察，容易被 AI 提到的品牌，通常具備幾個條件：</p>
+    <ul>
+      <li><strong>被多處提到，而且說法一致</strong>。只有你自己官網講你好，份量不夠；當多個平台、多篇真實內容都提到你、講的重點一致，AI 才有足夠依據。</li>
+      <li><strong>品牌實體清楚</strong>。名稱、在做什麼、在哪裡、屬於哪個領域，這些資訊如果零散或矛盾，AI 不容易「認得」你是誰。</li>
+      <li><strong>內容有實據、結構清楚</strong>。有具體資訊、能一段就講明白的內容，比空泛形容詞更容易被抓進答案。</li>
+      <li><strong>和主題的關聯強</strong>。你希望被推薦的那個問題（例如某產業、某服務），你的內容要真的圍繞它，而不是蹭邊。</li>
+    </ul>
+    <div class="callout">
+      <p>換個角度想：<strong>如果你自己去問 AI「這個領域推薦哪幾家」，它現在會不會提到你？如果不會，是因為網路上關於你的內容太少、太散，還是根本沒有？</strong>這個問題的答案，就是 GEO 要處理的缺口。</p>
+    </div>
+
+    <h2 id="do">GEO 實際怎麼做：答案佔位</h2>
+    <p>我們內部把 GEO 的做法叫「<strong>答案佔位</strong>」，因為它做的就是把「該被推薦、卻沒被推薦」的位置佔下來。大致三步：</p>
+    <h3>一、盤缺口</h3>
+    <p>對主要的幾個 AI 引擎，跑一輪你產業的真實提問（「某某服務推薦」「某某怎麼選」），看現在的答案裡出現的是誰、有沒有你、講得對不對。這一步會照出你在 AI 眼中的現況。</p>
+    <h3>二、補內容</h3>
+    <p>針對缺口，製作真實、清楚、能被引用的內容——把該講清楚的講清楚，把該有的實據補上。這裡沒有捷徑：內容要真，AI 引用到假資訊對你反而是傷害。</p>
+    <h3>三、鋪到 AI 會參考的地方</h3>
+    <p>把內容佈局到 AI 會抓取的平台與來源，並讓關於你的說法在各處保持一致。這一步和口碑行銷的平台佈局是同一套肌肉——差別只在，這次的讀者多了「AI」這一個。</p>
+
+    <div class="rel">
+      <p style="margin:0;">延伸閱讀：<a href="/blog/what-is-word-of-mouth-marketing/">口碑行銷是什麼</a>與 <a href="/blog/what-is-aeo-answer-engine-optimization/">AEO 怎麼做</a>——三者共用同一個地基，通常一起規劃。</p>
+    </div>
+
+    <h2 id="honest">三個務實提醒</h2>
+    <p>GEO 很新、也很熱，正因為這樣，更該把話講清楚：</p>
+    <ol>
+      <li><strong>沒有人能保證「一定被 AI 推薦」</strong>。AI 是否引用、怎麼措辭都有不確定性。能做的是提高機率，不是保證結果；聽到「保證被 ChatGPT 推薦」的，先打問號。</li>
+      <li><strong>它需要時間，而且會變動</strong>。內容累積、被各處提到、被 AI 納入參考，是漸進的；AI 模型本身也一直在更新，成效要持續觀察與調整。</li>
+      <li><strong>地基還是內容要真</strong>。GEO 不是話術工程，是把「真實、該被看見的你」整理到 AI 讀得到的地方。想靠灌假內容騙 AI，遲早反噬。</li>
+    </ol>
+
+    <div class="callout" style="background:#0F1419;border-color:rgba(124,92,255,0.35);border-left-color:#9F87FF;">
+      <p style="color:#F8F4ED;font-weight:700;font-family:'Noto Serif TC',serif;font-size:1.15rem;margin-bottom:0.5rem;">想知道現在問 AI 你的產業，答案裡有沒有你？</p>
+      <p style="color:rgba(248,244,237,0.75);">我們的免費品牌健檢會對 6 大 AI 引擎實際跑你產業的提問，把「該被推薦卻沒被推薦」的缺口列給你看。</p>
+      <p><a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#06C755] text-white font-bold px-6 py-3 rounded-full hover:bg-[#05B04C] transition mt-2">加 LINE 預約免費健檢 →</a></p>
+    </div>
+
+    <h2 id="faq">常見問題</h2>
+
+    <p class="faq-q">GEO 跟 SEO、AEO 差在哪？</p>
+    <p>SEO 讓你被搜到、被點進來；AEO 讓內容被當答案念出來；GEO 讓品牌在 ChatGPT、Perplexity 這類生成式 AI 回答時被主動提到與引用。三者互補，共用「內容夠真、夠完整」的地基。AEO 與 GEO 業界常混用，界線還沒公認定義。</p>
+
+    <p class="faq-q">GEO 能保證讓 AI 推薦我嗎？</p>
+    <p>不能。AI 是否引用、怎麼措辭都有不確定性，任何「保證被 AI 推薦」都要小心。GEO 能做的是把該被引用的真實內容備齊、補上缺口、佈局到 AI 會參考的地方，提高被正確提到的機率。</p>
+
+    <p class="faq-q">GEO 是 Google 官方推出的東西嗎？</p>
+    <p>不是。GEO 這個詞是 2023 年由 Aggarwal 等學者在學術論文正式提出的，不是任何搜尋引擎或 AI 公司的官方項目，描述的是因應生成式 AI 的優化實務。</p>
+
+    <p class="faq-q">我的品牌很小，也需要做 GEO 嗎？</p>
+    <p>看你的客群會不會用 AI 做功課。如果準買家已經開始問 AI「推薦哪幾家」而答案裡沒有你，那就是實際缺口。品牌大小不是重點，重點是網路上有沒有足夠、一致、可信的內容讓 AI 有依據提到你。</p>
+
+    <p class="faq-q">GEO 跟口碑行銷有關係嗎？</p>
+    <p>關係很深。AI 的答案綜合自網路大量內容，當多個平台、多篇真實內容一致地提到你、講得清楚，AI 就更有依據把你納入答案。扎實的口碑內容佈局，正是餵給 GEO 的原料。</p>
+
+    <div class="mt-14 pt-8" style="border-top:1px solid #E3DAC9;">
+      <p class="text-sm" style="color:#5A5E66;margin-bottom:0.5rem;">作者：口碑製造所編輯部｜最後更新：2026 年 7 月 22 日</p>
+      <p class="text-sm" style="color:#5A5E66;">口碑製造所替品牌做 SEO、AEO、GEO 三軌優化，讓內容被搜到、被當答案、被 AI 引用。</p>
+    </div>
+
+  </div>
+</article>
+
+<section class="py-24 bg-ink text-cream relative overflow-hidden border-t border-white/5">
+  <div class="absolute inset-0 grid-bg opacity-50"></div>
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-ai/15 rounded-full blur-[150px]"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/15 rounded-full blur-[120px]"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center">
+    <p class="mono text-xs text-gold mb-4">FREE BRAND AI AUDIT</p>
+    <h2 class="serif text-3xl md:text-5xl font-black leading-tight mb-6">
+      你的品牌，<br>
+      值得被<span class="text-gold">搜尋到</span>，<br>
+      也值得被 <span class="text-ai2">AI 推薦</span>。
+    </h2>
+    <p class="text-lg text-cream/70 max-w-2xl mx-auto mb-10">
+      30 分鐘免費諮詢，幫你健檢品牌在 Google + 6 大 AI 引擎的曝光現況。
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="bg-[#06C755] text-white font-bold px-8 py-4 rounded-full hover:bg-[#05B04C] transition inline-flex items-center gap-3 shadow-lg shadow-[#06C755]/30">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988 2.595a.233.233 0 0 1-.234.234H1.95a.234.234 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.13 0 .234.106.234.234v3.488h1.974c.128 0 .234.106.234.234v.234zm1.46 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm5.32 0a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.187-.093l-2.066-2.788v2.647a.233.233 0 0 1-.234.234h-.234a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h.27a.234.234 0 0 1 .187.093l2.066 2.788V8.382c0-.128.106-.234.234-.234h.234c.128 0 .234.106.234.234v4.517zm3.737-3.488H13.56v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-1.969v.84h1.969c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234h-2.437a.233.233 0 0 1-.234-.234V8.382c0-.128.106-.234.234-.234h2.437c.128 0 .234.106.234.234v.234a.233.233 0 0 1-.234.234z"/></svg>
+        加 LINE 直接聊
+      </a>
+      <a href="/#services" class="border border-cream/30 text-cream px-8 py-4 rounded-full hover:bg-white/5 transition inline-flex items-center gap-2">
+        看我們怎麼做 →
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ink text-cream/50 border-t border-white/10 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <div class="serif font-bold text-cream">口碑製造所 · WoM Factory</div>
+    <a href="https://lin.ee/N0z1eq9" target="_blank" rel="noopener" class="hover:text-gold transition">加 LINE 聯絡</a>
+    <div class="mono text-xs">© WoM Factory · 真人寫真實口碑</div>
+  </div>
+</footer>
+
+</body>
+</html>
