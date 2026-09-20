@@ -74,30 +74,21 @@
   gtag('config', 'G-C9B1X4WY6P');
 </script>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/tailwind.css">
+<link rel="preload" href="/assets/NotoSansTC.subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/NotoSerifTC.subset.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Noto Sans TC';font-style:normal;font-weight:100 900;font-display:swap;src:url('/assets/NotoSansTC.subset.woff2') format('woff2')}
+@font-face{font-family:'Noto Serif TC';font-style:normal;font-weight:200 900;font-display:swap;src:url('/assets/NotoSerifTC.subset.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url('/assets/JetBrainsMono.subset.woff2') format('woff2')}
 
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        ink: '#0F1419', navy: '#1B2D4A', navy2: '#243957',
-        gold: '#C49A6C', gold2: '#D9B98A',
-        ai: '#7C5CFF', ai2: '#9F87FF',
-        cream: '#F8F4ED', cream2: '#EFE8DA'
-      },
-      fontFamily: {
-        serif: ['"Noto Serif TC"', 'serif'],
-        sans: ['"Noto Sans TC"', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'monospace']
-      }
-    }
-  }
-}
-</script>
+/* a11y AA 對比修正 2026-09-20:深色區保留亮金、淺色區調深 */
+.bg-white .text-gold, .bg-cream .text-gold, .bg-cream2 .text-gold, #map .text-gold { color:#836324 !important; }
+.bg-white [class~="text-ink/40"] { color:#5f6368 !important; }
+[class~="text-gold/70"], [class~="text-gold/80"] { color:#c49a6c !important; }
+[class~="bg-[#1877F2]"] { background-color:#1770e0 !important; }
+[class~="bg-[#06C755]"] { background-color:#0a8040 !important; }
+</style>
 
 <style>
 html { scroll-behavior: smooth; }
