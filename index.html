@@ -83,10 +83,13 @@
 </script>
 
 <link rel="stylesheet" href="assets/tailwind.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap"></noscript>
+<link rel="preload" href="assets/NotoSansTC.subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/NotoSerifTC.subset.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Noto Sans TC';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/NotoSansTC.subset.woff2') format('woff2')}
+@font-face{font-family:'Noto Serif TC';font-style:normal;font-weight:200 900;font-display:swap;src:url('assets/NotoSerifTC.subset.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url('assets/JetBrainsMono.subset.woff2') format('woff2')}
+</style>
 
 
 <style>
