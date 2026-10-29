@@ -53,35 +53,15 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXX')</script>
 -->
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/tailwind.css">
+<link rel="preload" href="/assets/NotoSansTC.subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/NotoSerifTC.subset.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Noto Sans TC';font-style:normal;font-weight:100 900;font-display:swap;src:url('/assets/NotoSansTC.subset.woff2') format('woff2')}
+@font-face{font-family:'Noto Serif TC';font-style:normal;font-weight:200 900;font-display:swap;src:url('/assets/NotoSerifTC.subset.woff2') format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url('/assets/JetBrainsMono.subset.woff2') format('woff2')}
+</style>
 
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        ink: '#0F1419',
-        navy: '#1B2D4A',
-        navy2: '#243957',
-        gold: '#C49A6C',
-        gold2: '#D9B98A',
-        ai: '#7C5CFF',
-        ai2: '#9F87FF',
-        cream: '#F8F4ED',
-        cream2: '#EFE8DA'
-      },
-      fontFamily: {
-        serif: ['"Noto Serif TC"', 'serif'],
-        sans: ['"Noto Sans TC"', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'monospace']
-      }
-    }
-  }
-}
-</script>
 
 <style>
 html { scroll-behavior: smooth; }
