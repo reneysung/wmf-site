@@ -96,12 +96,19 @@
 [class~="text-gold/70"], [class~="text-gold/80"] { color:#c49a6c !important; }
 [class~="bg-[#1877F2]"] { background-color:#1770e0 !important; }   /* FB 藍→過 AA */
 [class~="bg-[#06C755]"] { background-color:#0a8040 !important; }   /* LINE 綠→過 AA(白字) */
+
+/* a11y AA 對比＋字級修正 2026-11-17（Impeccable detect）：只改失分處，不動版面與內容。 */
+[class~="text-cream/40"] { color:rgba(248,244,237,0.6) !important; }               /* 深色區 cream/40 微標籤（hero SERVING ACROSS、CTA lin.ee）3.5–3.6:1 → /60 */
+#map [class~="text-ink/50"] { color:rgba(15,20,25,0.7) !important; }               /* 地圖區淺底「服務過的產業」3.4:1 → /70 */
+.svc-block.ai [class*="text-ai2"] { color:#c2b3ff !important; }                   /* AI 卡深色漸層上的紫字（AI 標籤／04・05／適合）2.4–3.6:1 → 提亮淡紫 */
+[class~="bg-gold/20"][class~="text-gold"] { color:#e8c89c !important; }           /* 精選案例卡暖色角落金字 ★FEATURED 3.7:1 → 提亮金 */
+[class~="text-[10px]"] { font-size:11px !important; }                             /* 10px 功能性微標籤（Threads／FB 社團／AI）→ 11px 可讀下限 */
 </style>
 
 
 <style>
 html { scroll-behavior: smooth; }
-body { font-family: 'Noto Sans TC', sans-serif; color: #1A1A1A; background: #F8F4ED; }
+body { font-family: 'Noto Sans TC', sans-serif; color: #1A1A1A; background: #0F1419; }  /* 2026-11-17：頁面底色 cream→ink，依禁令；各 section 自帶底色，視覺不變，僅過捲回彈區由米色改深色 */
 h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; letter-spacing: 0.02em; }
 .mono { font-family: 'JetBrains Mono', monospace; }
 
